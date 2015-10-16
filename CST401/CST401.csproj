@@ -67,13 +67,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="crossdomain.xml" />
+    <Content Include="Maven\crossdomain.xml" />
     <Content Include="Maven\dependency.html" />
     <Content Include="Maven\GraphMLViewer.js" />
     <Content Include="Maven\GraphMLViewer.swf" />
     <Content Include="packages.config" />
-    <Resource Include="Maven\dependency.graphml">
+    <Content Include="Maven\dependency.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -83,7 +84,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
